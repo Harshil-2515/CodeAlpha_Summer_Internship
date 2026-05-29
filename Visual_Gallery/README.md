@@ -17,4 +17,4 @@ Open `index.html` in a browser to view the gallery.
 
 ## Preview
 
-![Visual Gallery Preview](images/1.jpg)
+![Visual Gallery Preview](images/19.png)
