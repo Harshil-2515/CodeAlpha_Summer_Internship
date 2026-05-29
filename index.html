@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harshil's Visual Diary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&family=Space+Mono:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-h">H</span><span class="logo-dot">.</span>
+    </div>
+    <div class="nav-filters" id="navFilters">
+      <button class="filter-btn active" data-filter="all">All Photos</button>
+      <button class="filter-btn" data-filter="mumbai">Mumbai Trip</button>
+      <button class="filter-btn" data-filter="food">Food</button>
+      <button class="filter-btn" data-filter="graphic">Graphic Work</button>
+    </div>
+    <div class="nav-menu-icon" id="menuIcon">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV DRAWER -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="filter-btn active" data-filter="all">All Photos</button>
+    <button class="filter-btn" data-filter="mumbai">Mumbai Trip</button>
+    <button class="filter-btn" data-filter="food">Food</button>
+    <button class="filter-btn" data-filter="graphic">Graphic Work</button>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grain"></div>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Harshil's Visual <em>Diary</em>
+      </h1>
+      <p class="hero-tagline">Shot through my lens</p>
+      <div class="hero-meta">
+        <div class="meta-item">
+          <span class="meta-num" id="photoCount">18</span>
+          <span class="meta-label">Frames</span>
+        </div>
+        <div class="meta-divider"></div>
+        <div class="meta-item">
+          <span class="meta-num">4</span>
+          <span class="meta-label">Albums</span>
+        </div>
+        <div class="meta-divider"></div>
+        <div class="meta-item">
+          <span class="meta-num">∞</span>
+          <span class="meta-label">Stories</span>
+        </div>
+      </div>
+      <button class="hero-cta" onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})">
+        <span>Explore Gallery</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M3 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section class="gallery-section" id="gallery">
+    <div class="section-header">
+      <p class="section-label">— Collection</p>
+      <h2 class="section-title" id="galleryTitle">All Photos</h2>
+      <p class="section-count"><span id="visibleCount">18</span> frames</p>
+    </div>
+    <div class="masonry-grid" id="masonryGrid">
+      <!-- Injected by JS -->
+    </div>
+    <div class="empty-state" id="emptyState" style="display:none">
+      <span>No photos in this category yet.</span>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lbClose">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 4l12 12M16 4L4 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </button>
+    <button class="lb-arrow lb-prev" id="lbPrev">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M13 4l-6 6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="lb-arrow lb-next" id="lbNext">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="lb-stage">
+      <div class="lb-fan" id="lbFan">
+        <!-- Cards injected by JS -->
+      </div>
+    </div>
+    <div class="lb-info">
+      <p class="lb-title" id="lbTitle"></p>
+      <p class="lb-category" id="lbCategory"></p>
+      <p class="lb-counter"><span id="lbCurrent">1</span> / <span id="lbTotal">18</span></p>
+    </div>
+  </div>
+  <div class="lightbox-overlay" id="lbOverlay"></div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">H<span class="gold">.</span></span>
+        <p class="footer-tagline">Shot through my lens</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/Harshil-2515" target="_blank" class="footer-link" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://linkedin.com/in/harshil-shah25" target="_blank" class="footer-link" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-line"></div>
+      <div class="footer-copy">
+        <p>Designed &amp; Developed by <span class="gold">Harshil</span>&nbsp;<span class="footer-year">© 2026</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
