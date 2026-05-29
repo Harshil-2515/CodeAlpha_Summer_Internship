@@ -1,4 +1,7 @@
 # Visual Gallery
+## Preview
+
+![Visual Gallery Preview](./images/19.png)
 
 A clean visual diary built with HTML, CSS, and JavaScript.
 
@@ -15,6 +18,4 @@ This project showcases a styled image gallery of moments, places, and flavors in
 
 Open `index.html` in a browser to view the gallery.
 
-## Preview
 
-![Visual Gallery Preview](./images/19.png)
