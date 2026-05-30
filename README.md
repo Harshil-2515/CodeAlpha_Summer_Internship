@@ -33,7 +33,7 @@ A modern and responsive image gallery designed to showcase photographs and visua
 https://github.com/Harshil-2515/CodeAlpha_Summer_Internship/tree/main/Visual_Gallery
 
 🌐 **Live Demo:**  
-https://harshil-2515.github.io/CodeAlpha_Summer_Internship/Visual_Gallery/
+https://harshil-2515.github.io/CodeAlpha_Summer_Internship/Visual_Gallery
 
 ---
 
@@ -53,7 +53,7 @@ A personal portfolio website showcasing my skills, projects, achievements, and j
 https://github.com/Harshil-2515/Tech_Portfolio
 
 🌐 **Live Demo:**  
-https://harshil-2515.github.io/Tech_Portfolio/
+https://harshil-2515.github.io/Tech_Portfolio
 
 
 
