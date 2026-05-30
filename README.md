@@ -6,6 +6,10 @@ This repository contains the projects completed during my **Web Development Inte
 
 ## 🛠️ Tech Stack
 
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=html,css,js" />
+</p>
+
 - HTML5
 - CSS3
 - JavaScript
@@ -28,6 +32,9 @@ A modern and responsive image gallery designed to showcase photographs and visua
 🔗 **Project Folder:**  
 https://github.com/Harshil-2515/CodeAlpha_Summer_Internship/tree/main/Visual_Gallery
 
+🌐 **Live Demo:**  
+https://harshil-2515.github.io/CodeAlpha_Summer_Internship/Visual_Gallery/
+
 ---
 
 ### 💼 Task 2 – Tech Portfolio
@@ -44,6 +51,9 @@ A personal portfolio website showcasing my skills, projects, achievements, and j
 
 🔗 **Portfolio Repository:**  
 https://github.com/Harshil-2515/Tech_Portfolio
+
+🌐 **Live Demo:**  
+https://harshil-2515.github.io/Tech_Portfolio/
 
 
 
